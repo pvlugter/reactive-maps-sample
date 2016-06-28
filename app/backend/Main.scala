@@ -24,7 +24,7 @@ import com.typesafe.config.ConfigFactory
 object Main {
   def main(args: Array[String]): Unit = {
     val config = Env.asConfig
-    val systemName = sys.env.getOrElse("BUNDLE_SYSTEM", "application")
+    val systemName = sys.env.getOrElse("BUNDLE_SYSTEM", "reactive-maps")
     val systemVersion = sys.env.getOrElse("BUNDLE_SYSTEM_VERSION", "1")
     implicit val system = ActorSystem(s"$systemName-$systemVersion", config.withFallback(ConfigFactory.load()))
 

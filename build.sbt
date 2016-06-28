@@ -35,7 +35,7 @@ normalizedName in Bundle := "reactive-maps-frontend"
 
 BundleKeys.system := "reactive-maps"
 
-BundleKeys.nrOfCpus := 2.0
+BundleKeys.nrOfCpus := 1.0
 BundleKeys.memory := 64.MiB
 BundleKeys.diskSpace := 50.MB
 BundleKeys.endpoints := Map(
