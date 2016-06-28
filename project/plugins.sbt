@@ -15,3 +15,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-bintray-bundle" % "1.0.2")
 addSbtPlugin("com.lightbend.conductr" % "sbt-conductr" % "2.1.3")
+
+resolvers += Resolver.url("lightbend-monitoring", url("https://lightbend.bintray.com/commercial-monitoring"))(Resolver.ivyStylePatterns)
+addSbtPlugin("com.lightbend.cinnamon" % "sbt-cinnamon" % "2.0.0-RC2")

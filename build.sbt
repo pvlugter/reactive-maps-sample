@@ -84,9 +84,15 @@ inConfig(Bundle)(Seq(
 BintrayBundle.settings(BackendRegion)
 BintrayBundle.settings(BackendSummary)
 
+// Cinnamon settings
+
+libraryDependencies ++= Seq(
+  Cinnamon.library.cinnamonAkka,
+  Cinnamon.library.cinnamonCHMetrics
+)
 
 // Root project
 
 lazy val root = (project in file("."))
-  .enablePlugins(PlayScala)
+  .enablePlugins(PlayScala, Cinnamon)
   .configs(BackendRegion, BackendSummary)
