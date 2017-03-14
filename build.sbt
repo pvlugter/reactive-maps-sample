@@ -88,7 +88,7 @@ BintrayBundle.settings(BackendSummary)
 
 libraryDependencies ++= Seq(
   Cinnamon.library.cinnamonAkka,
-  Cinnamon.library.cinnamonCHMetrics
+  Cinnamon.library.cinnamonCHMetricsStatsDReporter
 )
 
 // Root project
